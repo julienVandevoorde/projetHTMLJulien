@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien's Porsche Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-link"><a href="index.html"><img id="logo" src="logo.png" alt="logo"></a></div>
+        <h1>Bienvenue chez Julien's Porsche Garage</h1>    
+    </header>
+    <div class="page">
+        <nav>  
+            <ul class="menu">
+                <li><a href="index.html">Menu déroulant</a>
+                    <ul>
+                        <li><a href="#">Sous-menu 1</a></li>
+                        <li><a href="#">Sous-menu 2</a></li>
+                        <li><a href="#">Sous-menu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="tableau.html">Tableau</a></li>
+                <li><a href="iframe.html">iFrame</a></li>
+                <li><a href="image_cliquable.html">Image cliquable</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>  
+            </ul>      
+        </nav>
+    </div>
+    <section class="conteneur">
+        <div class="zoneGaucheIndex">
+            <h3>Se connecter :</h3>
+            <form action="#" method="get">
+                <p>
+                    <label for="nom">Identifiant :</label><br>
+                    <input type="text" name="nom" id="nom" class="couleur"><br>
+
+                    <label for="pass">Mot de passe :</label><br>
+                    <input type="password" name="pass" id="pass" class="couleur"><br>
+                </p>
+                <p>
+                    <button type="submit">Se connecter</button>
+                </p>
+
+            </form>
+        </div>
+        <div class="milieuPageIndex">
+            <p class="description">
+                <span class="highlighted-text">Julien's Porsche Garage</span>, votre destination automobile de confiance à Bruxelles. Depuis notre établissement passionné, nous sommes fiers de proposer une gamme complète de services pour les propriétaires et les amateurs de Porsche. Que vous recherchiez une réparation de haute qualité, l'achat d'une Porsche exceptionnelle ou des conseils d'experts, notre équipe dévouée est là pour répondre à tous vos besoins.                
+                Notre expertise inégalée en matière de réparation et d'entretien garantit que votre Porsche est entre les mains de professionnels qualifiés.</p>
+            <p><img id="presentationGarage" src="garage.jpg" alt="presentationGarage"></p>
+            <p class="description">De la mécanique minutieuse à l'électronique sophistiquée, nous mettons tout en œuvre pour garder votre véhicule dans un état optimal. Chaque réparation est exécutée avec une attention méticuleuse aux détails, afin que vous puissiez retrouver la sensation de conduite exceptionnelle qui définit une Porsche.                
+                Si vous êtes à la recherche de votre prochaine Porsche de rêve, notre sélection soigneusement choisie de véhicules d'occasion de haute qualité est prête à vous émerveiller. Que ce soit pour le plaisir de la conduite quotidienne ou l'excitation des performances sur piste, nous avons la Porsche parfaite pour chaque passionné.                
+                <span class="highlighted-text">Chez Julien's Porsche Garage</span>, notre engagement envers la satisfaction du client est au cœur de tout ce que nous faisons. Notre équipe amicale est là pour vous guider à chaque étape, en vous fournissant des informations et des conseils honnêtes pour que vous puissiez prendre des décisions éclairées concernant votre Porsche.
+            </p>
+        </div>
+        <div class="zoneDroiteIndex">
+            <h3>Avez-vous été satisfait du service?</h3>
+            <button id="ouiBtn">Oui</button>
+            <button id="nonBtn">Non</button>
+            <div id="messageBox"></div>
+            <script src="script.js"></script>
+        </div>
+    </section>
+<footer>
+    <p>@Copyright 1999-2023 by Julien's data. All Rights Reserved.</p>
+    <p>Julien's Porsche Garage is powered by Julien engineering.</p>
+</footer>
+</body>
+</html>

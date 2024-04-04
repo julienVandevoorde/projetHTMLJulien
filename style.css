@@ -1,0 +1,359 @@
+/* STYLE BODY */
+body {
+    background-color: rgb(189, 186, 186);
+    font-family: "Roboto", sans-serif;
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+/* rectangle header */
+header {
+    background-color: #605c5c;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+/* logo */
+#logo {
+    width: 125px;
+}
+
+.logo-link {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-top: -20px;
+}
+/* style h1 */
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    padding: 10px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black,
+        0px 0px 1px black;
+}
+/* BARRE DE NAVIGATION */
+nav {    
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #605c5c;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Ajout d'une transition au survol */
+}
+
+.menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #605c5c;
+    display: none;
+    width: max-content; /* Ajuste la largeur du sous-menu à son contenu */
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s; /* Ajout d'une transition au survol */
+}
+
+.menu ul a:hover {
+    background-color: black;
+    color: white;
+}
+
+.menu ul li:first-child a {
+    border-top: 1px solid white;
+}
+/* FIN DE LA BARRE DE NAVIGATION
+/* CONTENU DE L'INDEX */
+.conteneur {
+    display: flex;
+    flex-direction: row;    
+}
+
+/* zone de gauche */
+.zoneGaucheIndex {
+    width: 170px;
+    height: 1000px;
+    padding: 10px;
+    background-color: #605c5c;
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.zoneGaucheReste {
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    background-color: #605c5c;
+    clear: both;
+    float: left;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+h3 {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 23px;
+    padding: 0px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black,
+        0px 0px 1px black;
+}
+
+form p {
+    margin-top: 5px;
+}
+
+p label {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black,
+        0px 0px 1px black;
+}
+
+button {
+    align-items: center;
+    background-color: rgb(189, 186, 186);
+    width: 116px;
+    height: 26px
+}
+/* fin de la zone de gauche */
+/* contenu milieu de la page */
+.milieuPageIndex {    
+    flex: 1;
+    height: 1000px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: auto;      
+}
+
+.milieuPageReste {    
+    flex: 1;
+    height: auto;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: auto;      
+}
+
+.description {
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+    margin: 20px;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.highlighted-text {
+    color:white;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black,
+        0px 0px 1px black;    
+}
+
+#presentationGarage {
+    width: 95%;
+    border: 2px solid black;
+}
+
+/* fin du contenu du milieu de la page */
+/*zone de droite */
+.zoneDroiteIndex {
+    width: 170px;
+    height: 1000px;
+    padding: 10px;
+    background-color: #605c5c;
+    clear: both;
+    float: right;
+    margin-bottom: 20px; 
+    border: 2px solid black;
+}
+
+.zoneDroiteReste {
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    background-color: #605c5c;
+    clear: both;
+    float: right;
+    margin-bottom: 20px; 
+    border: 2px solid black;
+}
+
+div #messageBox {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* fin de la zone de doite */
+/* FIN DU CONTENU DE L'INDEX */
+
+/* CONTENU IFRAME */
+iframe {
+    width: 700px;
+    height: 800px;
+    border: 2px solid black;
+}
+/* FIN CONTENU IFRAME */
+
+/* CONTENU DE L'iMAGE CLIQUABLE */
+#carte {
+    width: 80%;
+    border : 2px solid black;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* FIN DU CONTENU DE L'iMAGE CLIQUABLE */
+
+/* CONTENU DU FORMULAIRE */
+.formContact {
+    margin: 0;
+    padding: 0;
+}
+  
+.milieuPageReste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.formContact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.formContact input,
+.formContact textarea {
+    width: 600px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.formContact textarea:focus,
+.formContact input:focus {
+    background-color: rgb(176, 192, 212); 
+}
+
+.formContact textarea {
+    height: 150px;
+}
+  
+.formContact button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.formContact button:hover {
+    background-color: #0056b3;
+}
+  
+/* FIN DE CONTENU DU FORMULAIRE */
+
+/* FOOTER */
+footer {
+    background-color: #605c5c;
+    color: white;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    margin: 10px 0;
+    margin: 20px;
+    font-size: 16px;
+    padding: 0px;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black,
+        0px 0px 1px black;
+}
+/* FIN DU FOOTER */
